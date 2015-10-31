@@ -1,0 +1,114 @@
+\documentclass[main]{subfiles}
+\begin{document}
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+% summarizes lecture 
+% author:
+
+\section{String}
+\renewcommand{\arraystretch}{1.5}
+\definecolor{lgray}{gray}{0.95}
+\definecolor{gray}{gray}{0.9}
+
+\rowcolors{1}{lgray}{gray}
+
+The class String includes methods for examining individual characters of the sequence, for comparing strings, for searching strings, for extracting substrings, and for creating a copy of a string with all characters translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by the Character class.
+
+\scriptsize
+\begin{longtable}{p{0.4\linewidth} p{0.6\linewidth}}
+\hline \textbf{Method} & \textbf{Description}\\ \hline
+\endfirsthead
+
+\hline \textbf{Method} & \textbf{Description}\\ \hline\hline
+\endhead
+
+char \textbf{charAt}(\textit{int} index) 
+& Returns the char value at the specified index.\\
+
+int  \textbf{compareTo}(\textit{String} anotherString) 
+& Compares two strings lexicographically.\\
+
+int  \textbf{compareToIgnoreCase}(\textit{String} str) 
+& Compares two strings lexicographically, ignoring case differences.\\
+
+String  \textbf{concat}(\textit{String} str) 
+& Concatenates the specified string to the end of this string.\\
+
+static String  \textbf{copyValueOf}(\textit{char[]} data) 
+& Returns a String that represents the character sequence in the array specified.\\
+
+boolean  \textbf{endsWith}(\textit{String} suffix) 
+& Tests if this string ends with the specified suffix.\\
+
+boolean  \textbf{equals}(\textit{Object} anObject) 
+& Compares this string to the specified object.\\
+
+boolean  \textbf{equalsIgnoreCase}(\textit{String} anotherString) 
+& Compares this String to another String, ignoring case considerations.\\
+
+int  \textbf{hashCode}() 
+& Returns a hash code for this string.\\
+
+int  \textbf{indexOf}(\textit{int} ch) 
+& Returns the index within this string of the first occurrence of the specified character.\\
+
+int  \textbf{indexOf}(\textit{String} str) 
+& Returns the index within this string of the first occurrence of the specified substring.\\
+
+boolean  \textbf{isEmpty}() 
+& Returns true if, and only if, length() is 0.\\
+
+int  \textbf{lastIndexOf}(\textit{String} str) 
+& Returns the index within this string of the last occurrence of the specified substring.\\
+
+int  \textbf{length}() 
+& Returns the length of this string.\\
+
+boolean  \textbf{matches}(\textit{String} regex) 
+& Tells whether or not this string matches the given regular expression.\\
+
+String  \textbf{replace}(\textit{char} oldChar, \textit{char} newChar) 
+& Returns a new string resulting from replacing all occurrences of oldChar in this string with newChar.\\
+
+String \textbf{replaceAll}(\textit{String} regex, \textit{String} replacement) 
+& Replaces each substring of this string that matches the given regular expression with the given replacement.\\
+
+String \textbf{replaceFirst}(\textit{String} regex, \textit{String} replacement) 
+& Replaces the first substring of this string that matches the given regular expression with the given replacement.\\
+
+String[]  \textbf{split}(\textit{String} regex) 
+& Splits this string around matches of the given regular expression.\\
+
+String[]  \textbf{split}(\textit{String} regex, \textit{int} limit) 
+& Splits this string around matches of the given regular expression.\\
+
+boolean  \textbf{startsWith}(\textit{String} prefix) 
+& Tests if this string starts with the specified prefix.\\
+
+String  \textbf{substring}(\textit{int} beginIndex) 
+& Returns a new string that is a substring of this string.\\
+
+String  \textbf{substring}(\textit{int} beginIndex, \textit{int} endIndex) 
+& Returns a new string that is a substring of this string.\\
+
+char[]  \textbf{toCharArray}() 
+& Converts this string to a new character array.\\
+
+String  \textbf{toLowerCase}() 
+& Converts all of the characters in this String to lower case using the rules of the default locale.\\
+
+String  \textbf{toString}() 
+& This object (which is already a string!) is itself returned.\\
+
+String  \textbf{toUpperCase}() 
+& Converts all of the characters in this String to upper case using the rules of the default locale.\\
+
+String  \textbf{trim}() 
+& Returns a copy of the string, with leading and trailing whitespace omitted.\\
+
+static String  \textbf{valueOf}(\textit{Object} obj) 
+& Returns the string representation of the Object argument.\\
+
+\end{longtable}
+\todo[inline]{}
+\end{document}
